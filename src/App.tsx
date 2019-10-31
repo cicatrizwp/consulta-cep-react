@@ -1,15 +1,13 @@
 import React from 'react';
 import './App.css';
+import SearchForm from './components/SearchForm/SearchForm';
 
-import Button from './components/Button/Button';
-import InputField from './components/InputField/InputField';
 
 const App: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <Button />
-        <InputField />
+        <SearchForm />
       </header>
     </div>
   );
