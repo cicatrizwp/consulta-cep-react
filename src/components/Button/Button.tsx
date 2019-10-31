@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Wrapper = styled.button`
-  border-radius: 5px;
+  border-radius: 6px;
   background: #7e7aec;
   color: white;
   cursor: pointer;
