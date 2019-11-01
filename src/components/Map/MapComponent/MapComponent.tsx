@@ -2,12 +2,9 @@ import React, { memo } from 'react'
 import styled from 'styled-components'
 import GoogleMapReact, { Coords } from 'google-map-react'
 
-import markerSvg from './images/marker.svg'
+import API_KEY from '../../../API_KEY'
 
-/**
- * Modifique essa linha para inserir a chave gerada pela API do Google Maps
- */
-const API_KEY = 'MOCK'
+import marker from './images/marker.svg'
 
 interface IMap {
   coordinates?: Coords
@@ -29,18 +26,18 @@ const Marker = memo((props: any) =>
   </MarkerWrapper>
 )
 
-const MapComponent = (props: IMap) =>
+const Map = (props: IMap) =>
   <MapWrapper>
     <GoogleMapReact
-      bootstrapURLKeys={{ key: API_KEY }}
+      bootstrapURLKeys={{ key: 'AIzaSyCZTrU7Aiu986D32m4yyPWvA2iwJiyYFX4' }}
       defaultCenter={{ lat: -15.5, lng: -57 }}
       center={props.coordinates}
       defaultZoom={15}
     >
       <Marker {...props.coordinates}>
-        <img src={markerSvg} alt="marker" />
+        <img src={marker} alt="marker" />
       </Marker>
     </GoogleMapReact>
   </MapWrapper>
 
-export default MapComponent
+export default Map

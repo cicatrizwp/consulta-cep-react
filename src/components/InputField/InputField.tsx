@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { ChangeEvent } from 'react'
 import styled from 'styled-components'
 import InputMask from 'react-input-mask'
 import { omit } from 'lodash'
@@ -9,7 +9,7 @@ interface IInputField {
   value: string
 }
 
-const Wrapper = styled(InputMask)`
+const InputFieldWrapper = styled(InputMask)`
   border: 1px solid darkgray;
   border-radius: 5px;
   box-shadow: 0;
@@ -18,12 +18,12 @@ const Wrapper = styled(InputMask)`
 `
 
 const InputField = (props: IInputField) => {
-  const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const onChange = (e: ChangeEvent<HTMLInputElement>) => {
     props.onChange(e.target.value)
   }
 
   return (
-    <Wrapper
+    <InputFieldWrapper
       {...omit(props, 'onChange')}
       mask='99999-999'
       onChange={onChange}
@@ -34,4 +34,4 @@ const InputField = (props: IInputField) => {
   )
 }
 
-export default InputField;
+export default InputField

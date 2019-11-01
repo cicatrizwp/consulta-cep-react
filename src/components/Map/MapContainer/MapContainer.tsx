@@ -1,8 +1,8 @@
-import React, { useContext } from 'react'
+import React, { Fragment, useContext } from 'react'
 import styled from 'styled-components'
 
+import { Store } from '../../../contexts/store'
 import MapComponent from '../MapComponent/MapComponent'
-import Address from '../../../services/adress'
 
 const MapContainerWrapper = styled.div`
   border: 2px solid gainsboro;
@@ -12,7 +12,7 @@ const MapContainerWrapper = styled.div`
   position: relative;
 `
 
-const AddressContainer = styled.div`
+const AddressWrapper = styled.div`
   margin-bottom: 2rem;
 
   > * {
@@ -26,24 +26,26 @@ const Street = styled.h2`
 `
 
 const MapContainer = () => {
-  const { state } = useContext(Address)
+  const { state } = useContext(Store)
 
   const shouldShowMap = () => {
     if (state.status === 'ERROR') return <div>CEP não encontrado!</div>
 
     return (
-      <>
-        <AddressContainer>
+      <Fragment>
+        <AddressWrapper>
           <Street>{state.address.logradouro}</Street>
           <p>{state.address.bairro}</p>
           <p>{state.address.localidade} - {state.address.uf}</p>
           <p>{state.address.cep}</p>
-        </AddressContainer>
+        </AddressWrapper>
 
         <MapComponent coordinates={state.address.mapsCoordinates} />
-      </>
+      </Fragment>
     )
   }
+  console.log('state.status------------>', state.status)
+  if (!['LOADED', 'ERROR'].includes(state.status)) return null
 
   return (
     <MapContainerWrapper >
@@ -51,5 +53,6 @@ const MapContainer = () => {
     </MapContainerWrapper>
   )
 }
+
 
 export default MapContainer
