@@ -4,8 +4,6 @@ import App from './pages/App'
 
 
 ReactDOM.render(
-  <div>
-    <App />
-  </div>,
+  <App />,
   document.getElementById('root')
 )

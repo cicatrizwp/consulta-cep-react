@@ -11,11 +11,13 @@ const AppWrapper = styled.div`
 
 const Title = styled.h1`
   font-size: 2rem;
+  margin-block: 0;
   font-weight: bold;
   padding: 2rem 0;
   background: #002171;
   height: 100%
   color: white;
+  padding-inline: 2rem;
 `
 
 const MapContainer = lazy(() => import('../components/Map/MapContainer/MapContainer'))

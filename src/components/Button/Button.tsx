@@ -5,7 +5,7 @@ const ButtonWrapper = styled.button`
   border-radius: 5px;
   border: 0.5px #cfcfcf;
   background: #9e9e9e;
-  color: white;
+  color: black;
   cursor: pointer;
   font-size: 1rem;
   padding: .35rem 1rem;
