@@ -6,10 +6,11 @@ import Button from '../Button/Button'
 import InputField from '../InputField/InputField'
 
 const SearchFormContainerWrapper = styled.form`
-  background: gainsboro;
+  background: #0d47a1;
   box-sizing: border-box;
   padding: 2rem 2rem 4rem;
   width: 100%;
+  color: white;
 `
 
 const SearchFormFieldWrapperLabel = styled.div`
@@ -18,7 +19,6 @@ const SearchFormFieldWrapperLabel = styled.div`
 `
 
 const SearchBar = styled.div`
-  color: darkgray;
   display: flex;
 `
 

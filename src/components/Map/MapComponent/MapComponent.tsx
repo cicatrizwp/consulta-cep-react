@@ -29,7 +29,7 @@ const Marker = memo((props: any) =>
 const Map = (props: IMap) =>
   <MapWrapper>
     <GoogleMapReact
-      bootstrapURLKeys={{ key: 'AIzaSyCZTrU7Aiu986D32m4yyPWvA2iwJiyYFX4' }}
+      bootstrapURLKeys={{ key: API_KEY }}
       defaultCenter={{ lat: -15.5, lng: -57 }}
       center={props.coordinates}
       defaultZoom={15}

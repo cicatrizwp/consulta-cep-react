@@ -35,9 +35,9 @@ const MapContainer = () => {
       <Fragment>
         <AddressWrapper>
           <Street>{state.address.logradouro}</Street>
-          <p>{state.address.bairro}</p>
-          <p>{state.address.localidade} - {state.address.uf}</p>
-          <p>{state.address.cep}</p>
+          <p>Bairro: {state.address.bairro}</p>
+          <p>Cidade/UF: {state.address.localidade} - {state.address.uf}</p>
+          <p>CEP: {state.address.cep}</p>
         </AddressWrapper>
 
         <MapComponent coordinates={state.address.mapsCoordinates} />
