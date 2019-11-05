@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.js": "/consulta-cep-react/static/js/main.762ff954.chunk.js",
+    "main.js.map": "/consulta-cep-react/static/js/main.762ff954.chunk.js.map",
+    "runtime-main.js": "/consulta-cep-react/static/js/runtime-main.48c9954c.js",
+    "runtime-main.js.map": "/consulta-cep-react/static/js/runtime-main.48c9954c.js.map",
+    "static/js/2.3b09843c.chunk.js": "/consulta-cep-react/static/js/2.3b09843c.chunk.js",
+    "static/js/2.3b09843c.chunk.js.map": "/consulta-cep-react/static/js/2.3b09843c.chunk.js.map",
+    "static/js/3.4a69785d.chunk.js": "/consulta-cep-react/static/js/3.4a69785d.chunk.js",
+    "static/js/3.4a69785d.chunk.js.map": "/consulta-cep-react/static/js/3.4a69785d.chunk.js.map",
+    "static/js/4.bf35e17b.chunk.js": "/consulta-cep-react/static/js/4.bf35e17b.chunk.js",
+    "static/js/4.bf35e17b.chunk.js.map": "/consulta-cep-react/static/js/4.bf35e17b.chunk.js.map",
+    "index.html": "/consulta-cep-react/index.html",
+    "precache-manifest.95571dea53716ca910d4cae47984b45a.js": "/consulta-cep-react/precache-manifest.95571dea53716ca910d4cae47984b45a.js",
+    "service-worker.js": "/consulta-cep-react/service-worker.js",
+    "static/media/marker.svg": "/consulta-cep-react/static/media/marker.56fef3db.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.48c9954c.js",
+    "static/js/2.3b09843c.chunk.js",
+    "static/js/main.762ff954.chunk.js"
+  ]
+}
