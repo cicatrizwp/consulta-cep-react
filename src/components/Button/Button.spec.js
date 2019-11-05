@@ -10,4 +10,10 @@ describe('App', () => {
     let tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
+
+  it('renders the search message', () => {
+    const wrapper = mount(<Button />);
+    console.log(wrapper)
+    expect(wrapper.text()).toEqual("Buscar");
+  });
 });
