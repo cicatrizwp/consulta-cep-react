@@ -29,7 +29,7 @@ const LabelWrapper = styled.label`
 `
 
 const SearchFormContainer = () => {
-  const ctx = useContext(Store)
+  const context = useContext(Store)
   const [zipCode, setZipCode] = useState('')
 
   const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
@@ -37,7 +37,7 @@ const SearchFormContainer = () => {
 
     if (!zipCode) return
 
-    await ctx.action.fetchAddress(zipCode)
+    await context.action.fetchAddress(zipCode)
   }
 
   return (

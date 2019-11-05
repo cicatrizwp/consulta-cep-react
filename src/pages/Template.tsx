@@ -26,7 +26,7 @@ const Template = () =>
   <AppWrapper>
     <Title>Consulta de CEP</Title>
     <SearchForm />
-    <Suspense fallback={<div>Carregando, aguarde...</div>}>
+    <Suspense fallback={<div>Carregando informações...</div>}>
       <MapContainer />
     </Suspense>
   </AppWrapper>
