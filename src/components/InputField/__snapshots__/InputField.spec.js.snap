@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App snapshot renders 1`] = `
+<input
+  className="sc-bdVaJa kThWmV"
+  data-testid="search-field"
+  onBlur={[Function]}
+  onChange={[Function]}
+  onFocus={[Function]}
+  onMouseDown={[Function]}
+  onPaste={[Function]}
+  placeholder="01234-567"
+  required={true}
+/>
+`;
